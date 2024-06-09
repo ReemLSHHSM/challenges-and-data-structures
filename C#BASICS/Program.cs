@@ -5,7 +5,7 @@
 
         static void Main(string[] args)
         {
-            int[] arr1 = { 2, 55, 7, 4 };
+          /*  int[] arr1 = { 2, 55, 7, 4 };
            
 
             //Challange a
@@ -16,8 +16,22 @@
             //Challangeb
             int[] arr3 = { 1, 1,1,1,1, 2, 2, 3, 3, 3, 2, 3, 5, 5, 6, 7, 8, 3, 2, 1,2,3 };
           
-            Console.WriteLine(FrequentNumber(arr3));
+
+            Console.WriteLine(FrequentNumber(arr3))*/
+
+
+            //Challange 2
+            int []arr4 = { };
+            Console.WriteLine(MaximumValue(arr4));
         }
+
+
+
+
+
+
+
+
 
         //Challange a
         public static int[] ArrayReversal(int[] arr)
@@ -64,6 +78,31 @@
             }
 
             return frek;
+        }
+
+        //Challange 2
+         public static int MaximumValue(int[] arr)
+        {
+            if (arr.Length > 0)
+            {
+                int max = arr[0];
+
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    if (arr[i] > max)
+                    {
+                        max = arr[i];
+                    }
+                }
+
+                return max;
+            }
+            else
+            {
+                return 0;
+            }
+
+           
         }
 
     }
