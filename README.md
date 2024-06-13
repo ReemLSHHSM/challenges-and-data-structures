@@ -22,4 +22,4 @@ function called MaximumValue that accepts an array of integers as its parameter.
 ## Challenge 03: Remove Middle Value from Array  
 A function called RemoveMiddleValue that takes in an array as its parameter.It should remove the value at the middle index of the array if the array length is odd, or the middle two values if the array length is even, and return the modified array.  
 
-[CC3 whiteboard](./images/cc3.PNG "Visit CC03")
+[CC3 whiteboard](./cc3.PNG "Visit CC03") 
