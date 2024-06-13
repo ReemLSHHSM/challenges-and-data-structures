@@ -16,3 +16,10 @@ a method that takes an integer array and returns the number that appears the mos
 function called MaximumValue that accepts an array of integers as its parameter.The function should return the maximum value in the array.  
 
 [CC2 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Maximum/CC2.PNG?raw=true "Visit CC02")
+
+  
+
+## Challenge 03: Remove Middle Value from Array  
+A function called RemoveMiddleValue that takes in an array as its parameter.It should remove the value at the middle index of the array if the array length is odd, or the middle two values if the array length is even, and return the modified array.  
+
+[CC3 whiteboard](./images/cc3.PNG "Visit CC03")
