@@ -26,4 +26,4 @@ A function called RemoveMiddleValue that takes in an array as its parameter.It s
 
 ## Challenge 04: Insert Value in Middle of Array 
 A function called MiddleValue which takes in an array and a value to be added. return an array with the new value added at the middle index.  
-[CC04 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Insert-Middle-Value/C%23BASICS/Insert%20Value%20in%20Middle%20of%20Array/challange4.PNG?raw=true "Visit CC04") 
+[CC04 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Insert%20Value%20in%20Middle%20of%20Array/cc4.PNG?raw=true "Visit CC04") 
