@@ -25,11 +25,17 @@
              Console.WriteLine(MaximumValue(arr4));*/
 
             //Challange 3
-            int[] original = { 1, 2, 3, 4, 5 };
+            /*int[] original = { 1, 2, 3, 4, 5 };
             int[] median_arr = RemoveMiddleValue(original);
             Console.WriteLine("with median: " + String.Join(",", original));
-            Console.WriteLine("without median: " + String.Join(",", median_arr));
+            Console.WriteLine("without median: " + String.Join(",", median_arr));*/
 
+            //Challange 4
+            int [] arr = {2};
+            var arr_new = MiddleValue(arr, 5);
+
+            Console.WriteLine("with median: " + String.Join(",", arr));
+            Console.WriteLine("without median: " + String.Join(",", arr_new)); 
         }
 
 
@@ -149,6 +155,59 @@
                 }
             }
             arr = arr_tempo;
+
+            return arr;
+        }
+
+        //Challange 4
+        public static int[] MiddleValue(int[] arr,int value)
+        {
+
+            var arr_new = new int[arr.Length+1];
+
+            
+                for (int i = 0; i < arr_new.Length; i++) {
+
+                if (arr.Length % 2 == 0)
+                {
+                    if (i != (arr.Length / 2) && i< (arr.Length / 2))
+                    {
+                        arr_new[i] = arr[i];
+                    }
+                    else
+                    {
+                       // if(i == (arr.Length / 2))
+                      //  {
+                        arr_new[arr.Length / 2] = value;
+                        if(i != (arr.Length / 2))
+                            arr_new[i] = arr[i-1];
+                       // }
+                    }
+                }
+
+                else
+                {
+                    if (i != (arr_new.Length / 2) && i < (arr_new.Length / 2))
+                    {
+                        arr_new[i] = arr[i];
+                    }
+
+                    else
+                    {
+                        
+                    
+                        arr_new[arr_new.Length / 2] = value;
+                        if (i != (arr_new.Length / 2))
+                            arr_new[i] = arr[i - 1];
+                    }
+                }
+
+
+                }
+
+
+
+            arr = arr_new;
 
             return arr;
         }
