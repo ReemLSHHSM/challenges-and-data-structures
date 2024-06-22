@@ -26,4 +26,4 @@ A function called RemoveMiddleValue that takes in an array as its parameter.It s
 
 ## Challenge 04: Insert Value in Middle of Array 
 A function called MiddleValue which takes in an array and a value to be added. return an array with the new value added at the middle index.
-[CC04 whiteboard](./cc4.PNG "Visit CC04") 
+[CC04 whiteboard](.\C#BASICS\Insert Value in Middle of Array\challange4.PNG "Visit CC04") 
