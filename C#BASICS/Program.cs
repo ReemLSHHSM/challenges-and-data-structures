@@ -1,4 +1,6 @@
-﻿namespace C_BASICS
+﻿
+
+namespace C_BASICS
 {
     internal class Program
     {
@@ -31,11 +33,20 @@
             Console.WriteLine("without median: " + String.Join(",", median_arr));*/
 
             //Challange 4
-            int [] arr = {2};
-            var arr_new = MiddleValue(arr, 5);
+            //int [] arr = {2};
+            //var arr_new = MiddleValue(arr, 5);
 
-            Console.WriteLine("with median: " + String.Join(",", arr));
-            Console.WriteLine("without median: " + String.Join(",", arr_new)); 
+            //Console.WriteLine("with median: " + String.Join(",", arr));
+            //Console.WriteLine("without median: " + String.Join(",", arr_new)); 
+
+
+            //Challange 5
+            int[] arr = { 1, 2, 2, 3, 4, 2, 3, 5, 1, 0, 0 };
+            var arr2 = FindDuplicates(arr);
+
+            Console.WriteLine("Original: " + String.Join(",", arr)+"\n");
+            Console.WriteLine("without duplicates: " + String.Join(",", arr2));
+            Console.ReadKey();
         }
 
 
@@ -122,7 +133,7 @@
         {
             if (arr.Length == 0)
             {
-                return arr; 
+                return arr;
             }
 
             int newLength;
@@ -160,28 +171,29 @@
         }
 
         //Challange 4
-        public static int[] MiddleValue(int[] arr,int value)
+        public static int[] MiddleValue(int[] arr, int value)
         {
 
-            var arr_new = new int[arr.Length+1];
+            var arr_new = new int[arr.Length + 1];
 
-            
-                for (int i = 0; i < arr_new.Length; i++) {
+
+            for (int i = 0; i < arr_new.Length; i++)
+            {
 
                 if (arr.Length % 2 == 0)
                 {
-                    if (i != (arr.Length / 2) && i< (arr.Length / 2))
+                    if (i != (arr.Length / 2) && i < (arr.Length / 2))
                     {
                         arr_new[i] = arr[i];
                     }
                     else
                     {
-                       // if(i == (arr.Length / 2))
-                      //  {
+                        // if(i == (arr.Length / 2))
+                        //  {
                         arr_new[arr.Length / 2] = value;
-                        if(i != (arr.Length / 2))
-                            arr_new[i] = arr[i-1];
-                       // }
+                        if (i != (arr.Length / 2))
+                            arr_new[i] = arr[i - 1];
+                        // }
                     }
                 }
 
@@ -194,8 +206,8 @@
 
                     else
                     {
-                        
-                    
+
+
                         arr_new[arr_new.Length / 2] = value;
                         if (i != (arr_new.Length / 2))
                             arr_new[i] = arr[i - 1];
@@ -203,7 +215,7 @@
                 }
 
 
-                }
+            }
 
 
 
@@ -212,5 +224,25 @@
             return arr;
         }
 
+        //Challange 5
+        public static int[] FindDuplicates(int[] arr)
+        {
+
+            HashSet<int> result = new HashSet<int>();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; j < arr.Length; j++)
+                {
+                    if(i!=j && arr[i] == arr[j]){
+                        result.Add(arr[i]);
+                    }
+                    
+                }
+
+
+            }
+            return result.ToArray();
+        }
     }
 }
