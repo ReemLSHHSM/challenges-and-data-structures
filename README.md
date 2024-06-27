@@ -29,5 +29,6 @@ A function called MiddleValue which takes in an array and a value to be added. r
 [CC04 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Insert%20Value%20in%20Middle%20of%20Array/cc4.PNG?raw=true "Visit CC04")   
 
 ## Challenge 05: Find Duplicates in Array 
-Write a function called FindDuplicates that accepts an array as its parameter. Without utilizing any of the built-in methods provided by the language, the function should return an array of duplicate values.
+Write a function called FindDuplicates that accepts an array as its parameter. Without utilizing any of the built-in methods provided by the language, the function should return an array of duplicate values.  
+
 [CC05 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Challenges/Find-Duplicates/cc5.PNG?raw=true "Visit CC05")
