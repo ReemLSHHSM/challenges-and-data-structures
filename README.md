@@ -33,8 +33,10 @@ Write a function called FindDuplicates that accepts an array as its parameter. W
 
 [CC05 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Challenges/Find-Duplicates/cc5.PNG?raw=true "Visit CC05")   
 
+
 ## Challenge 06: Common-Elements 
 Write a function called CommonElements that accepts two arrays of integers as its parameters. Without utilizing any of the built-in methods, the function should return a new array containing the common elements between the two input arrays.
 
 [CC06 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Challenges/Find-Duplicates/cc5.PNG?raw=true "Visit CC06")
+
 
