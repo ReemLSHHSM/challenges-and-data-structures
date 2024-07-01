@@ -2,7 +2,7 @@
 
 namespace C_BASICS
 {
-    internal class Program
+    public class Program
     {
 
         static void Main(string[] args)
@@ -41,12 +41,26 @@ namespace C_BASICS
 
 
             //Challange 5
-            int[] arr = { 1, 2, 2, 3, 4, 2, 3, 5, 1, 0, 0 };
-            var arr2 = FindDuplicates(arr);
+            //int[] arr = { 1, 2, 2, 3, 4, 2, 3, 5, 1, 0, 0 };
+            //var arr2 = FindDuplicates(arr);
 
-            Console.WriteLine("Original: " + String.Join(",", arr)+"\n");
-            Console.WriteLine("without duplicates: " + String.Join(",", arr2));
+            //Console.WriteLine("Original: " + String.Join(",", arr) + "\n");
+            //Console.WriteLine("without duplicates: " + String.Join(",", arr2));
+            //Console.ReadKey();
+
+            //Challange 6
+            //  public int[] CommonElements(int[] arr1, int[] arr2)
+
+            var arr1 = new int[] { 1, 2, 3, 4 };
+            var arr2 = new int[] { 45, 4 };
+
+            var result = CommonElements(arr1, arr2);
+
+            Console.WriteLine("Array 1: " + String.Join(",", arr1) + "\n");
+            Console.WriteLine("Array 2: " + String.Join(",", arr2)+"\n");
+            Console.WriteLine("Common Elemnts: " + String.Join(",",result));
             Console.ReadKey();
+
         }
 
 
@@ -234,15 +248,99 @@ namespace C_BASICS
             {
                 for (int j = 0; j < arr.Length; j++)
                 {
-                    if(i!=j && arr[i] == arr[j]){
+                    if (i != j && arr[i] == arr[j])
+                    {
                         result.Add(arr[i]);
                     }
-                    
+
                 }
 
 
             }
             return result.ToArray();
+        }
+
+        public static int [] CommonElements(int[] arr1, int[] arr2)
+        {
+            
+            HashSet<int> common = new HashSet<int>();
+            List<string> string_elemnts = new List<string>();
+            if (arr1.Length == arr2.Length)
+            {
+
+
+                for (int i = 0; i < arr1.Length; i++)
+                {
+                    for (int j = 0; j < arr2.Length; j++)
+                    {
+
+                        if (arr1[i] == arr2[j])
+                        {
+
+                            common.Add(arr1[i]);
+                            break;
+                        }
+                    }
+
+                }
+
+
+
+            }
+            else
+            {
+                if(arr1.Length> arr2.Length)
+                {
+                    for(int i = 0;i < arr2.Length; i++)
+                    {
+                        string_elemnts.Add(arr2[i].ToString());
+                    }
+
+                    for (int j = arr1.Length-arr2.Length;j < arr1.Length; j++)
+                    {
+                        string_elemnts.Add("*");
+
+                    }
+
+                    for(int i = 0; i < arr1.Length; i++)
+                    {
+                        for(int j=0; j < arr1.Length; j++)
+                        {
+                            if(arr1[i].ToString() == string_elemnts[j])
+                            {
+                                common.Add(arr1 [i]);
+                            }
+                        }
+                    }
+                }
+
+                else
+                {
+                    for(int i = 0;i < arr1.Length; i++)
+                    {
+                        string_elemnts.Add(arr1[i].ToString());
+                    }
+
+                    for (int j = arr2.Length-arr1.Length;j < arr2.Length; j++)
+                    {
+                        string_elemnts.Add("*");
+
+                    }
+
+                    for(int i = 0; i < arr2.Length; i++)
+                    {
+                        for(int j=0; j < arr2.Length; j++)
+                        {
+                            if(arr2[i].ToString() == string_elemnts[j])
+                            {
+                                common.Add(arr2 [i]);
+                            }
+                        }
+                    }
+                }
+            }
+
+            return common.ToArray();
         }
     }
 }
