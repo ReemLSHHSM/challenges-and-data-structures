@@ -44,9 +44,10 @@ Write a function called CommonElements that accepts two arrays of integers as it
 [CC06 whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Common-Elements/cc06.PNG?raw=true "Visit CC06")   
 
 ## Challenge 06-B: Reverse Words 
-Write a function called ReverseWords that accepts a string as its parameter. The function should reverse the order of the words in the string and return the resulting string. Words are defined as sequences of characters separated by spaces.
-[CC06-B Output](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Common-Elements/cc6.PNG?raw=true "Visit CC06-B")  
+Write a function called ReverseWords that accepts a string as its parameter. The function should reverse the order of the words in the string and return the resulting string. Words are defined as sequences of characters separated by spaces.   
 
-[CC06-B whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Common-Elements/cc06.PNG?raw=true "Visit CC06-B")
+[CC06-B Output](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc7.PNG?raw=true "Visit CC06-B")  
+
+[CC06-B whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit CC06-B")
 
 
