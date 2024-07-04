@@ -51,16 +51,20 @@ namespace C_BASICS
             //Challange 6
             //  public int[] CommonElements(int[] arr1, int[] arr2)
 
-            var arr1 = new int[] { 1, 2, 3, 4 };
-            var arr2 = new int[] { 45, 4 };
+            //var arr1 = new int[] { 1, 2, 3, 4 };
+            //var arr2 = new int[] { 45, 4 };
 
-            var result = CommonElements(arr1, arr2);
+            //var result = CommonElements(arr1, arr2);
 
-            Console.WriteLine("Array 1: " + String.Join(",", arr1) + "\n");
-            Console.WriteLine("Array 2: " + String.Join(",", arr2)+"\n");
-            Console.WriteLine("Common Elemnts: " + String.Join(",",result));
+            //Console.WriteLine("Array 1: " + String.Join(",", arr1) + "\n");
+            //Console.WriteLine("Array 2: " + String.Join(",", arr2)+"\n");
+            //Console.WriteLine("Common Elemnts: " + String.Join(",",result));
+            //Console.ReadKey();
+            string test = "csharp is programming language";
+           
+            Console.WriteLine("Before: "+Reverse_Words.ReverseWords(test));
+            Console.WriteLine("After: "+test);
             Console.ReadKey();
-
         }
 
 
