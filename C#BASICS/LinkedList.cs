@@ -80,5 +80,18 @@ namespace C_BASICS
                 Console.WriteLine("Linked List is empty");
             }
         }
+        public bool Includes(int data)
+        {
+            Node current = Head;
+            while (current != null)
+            {
+                if (current.Data == data)
+                {
+                    return true;
+                }
+                current = current.Next;
+            }
+            return false;
+        }
     }
 }

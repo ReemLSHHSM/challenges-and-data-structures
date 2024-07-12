@@ -50,4 +50,18 @@ Write a function called ReverseWords that accepts a string as its parameter. The
 
 [CC06-B whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit CC06-B")
 
+## Linked List
+Completing different Linked List operations like add,remove,diplay  
+Add_Method:  
+
+[Add whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Add")   
+Remove_Method   
+[Remove whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Remove")   
+Display_Method   
+[Display whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Display")   
+Includes   
+[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Includes")   
+
+
+
 
