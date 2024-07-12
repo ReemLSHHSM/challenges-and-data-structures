@@ -53,14 +53,13 @@ Write a function called ReverseWords that accepts a string as its parameter. The
 ## Linked List
 Completing different Linked List operations like add,remove,diplay  
 Add_Method:  
-
-[Add whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Add")   
+[Add whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Add_Node.PNG "Visit Add")   
 Remove_Method   
-[Remove whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Remove")   
+[Remove whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Remove.PNG "Visit Remove")   
 Display_Method   
-[Display whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Display")   
+[Display whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Display.PNG "Visit Display")   
 Includes   
-[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Reverse-Words/C%23BASICS/Reverse%20Words/cc07.PNG?raw=true "Visit Includes")   
+[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Includes.PNG "Visit Includes")   
 
 
 
