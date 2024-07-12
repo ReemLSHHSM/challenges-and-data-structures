@@ -7,64 +7,19 @@ namespace C_BASICS
 
         static void Main(string[] args)
         {
-            /*  int[] arr1 = { 2, 55, 7, 4 };
+            Node node = new Node(1);
+            LinkedList list=new LinkedList(node);
 
+            Node node3 = new Node(3);
+            Node node2 = new Node(2);
+            list.addtoHead(node2);
+            list.addtoHead(node3);
+            Console.WriteLine("before");
+            list.Display();
+            Console.WriteLine("after");
+            list.Remove(3);
+            list.Display();
 
-              //Challange a
-              int[] arr2 = ArrayReversal(arr1);
-              Console.WriteLine("Original: " + String.Join(",", arr1));
-              Console.WriteLine("Reverse: " + String.Join(",", arr2));
-
-              //Challangeb
-              int[] arr3 = { 1, 1,1,1,1, 2, 2, 3, 3, 3, 2, 3, 5, 5, 6, 7, 8, 3, 2, 1,2,3 };
-
-
-              Console.WriteLine(FrequentNumber(arr3))*/
-
-
-            //Challange 2
-            /* int []arr4 = { };
-             Console.WriteLine(MaximumValue(arr4));*/
-
-            //Challange 3
-            /*int[] original = { 1, 2, 3, 4, 5 };
-            int[] median_arr = RemoveMiddleValue(original);
-            Console.WriteLine("with median: " + String.Join(",", original));
-            Console.WriteLine("without median: " + String.Join(",", median_arr));*/
-
-            //Challange 4
-            //int [] arr = {2};
-            //var arr_new = MiddleValue(arr, 5);
-
-            //Console.WriteLine("with median: " + String.Join(",", arr));
-            //Console.WriteLine("without median: " + String.Join(",", arr_new)); 
-
-
-            //Challange 5
-            //int[] arr = { 1, 2, 2, 3, 4, 2, 3, 5, 1, 0, 0 };
-            //var arr2 = FindDuplicates(arr);
-
-            //Console.WriteLine("Original: " + String.Join(",", arr) + "\n");
-            //Console.WriteLine("without duplicates: " + String.Join(",", arr2));
-            //Console.ReadKey();
-
-            //Challange 6
-            //  public int[] CommonElements(int[] arr1, int[] arr2)
-
-            //var arr1 = new int[] { 1, 2, 3, 4 };
-            //var arr2 = new int[] { 45, 4 };
-
-            //var result = CommonElements(arr1, arr2);
-
-            //Console.WriteLine("Array 1: " + String.Join(",", arr1) + "\n");
-            //Console.WriteLine("Array 2: " + String.Join(",", arr2)+"\n");
-            //Console.WriteLine("Common Elemnts: " + String.Join(",",result));
-            //Console.ReadKey();
-            string test = "csharp is programming language";
-           
-            Console.WriteLine("Before: "+Reverse_Words.ReverseWords(test));
-            Console.WriteLine("After: "+test);
-            Console.ReadKey();
         }
 
 
