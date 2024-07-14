@@ -93,5 +93,31 @@ namespace C_BASICS
             }
             return false;
         }
+
+        public void RemoveDuplicate()
+        {
+            Node current = Head;
+
+
+            while (current != null)
+            {
+                Node pointer = current;
+                while (pointer.Next != null) {
+
+                    if (pointer.Next.Data == current.Data)
+                    {
+                        pointer.Next=pointer.Next.Next;
+                    }
+                    else
+                    {
+                        pointer=pointer.Next;
+                    }
+
+                }
+                current=current.Next;
+            }
+
+            Display();
+        }
     }
 }

@@ -7,18 +7,22 @@ namespace C_BASICS
 
         static void Main(string[] args)
         {
-            Node node = new Node(1);
-            LinkedList list=new LinkedList(node);
+            LinkedList list = new LinkedList(new Node(1));
+            list.addtoHead(new Node(2));
+            list.addtoHead(new Node(2));
+            list.addtoHead(new Node(3));
+            list.addtoHead(new Node(4));
+            list.addtoHead(new Node(4));
+            list.addtoHead(new Node(5));
 
-            Node node3 = new Node(3);
-            Node node2 = new Node(2);
-            list.addtoHead(node2);
-            list.addtoHead(node3);
-            Console.WriteLine("before");
+            Console.WriteLine("Original list:");
             list.Display();
-            Console.WriteLine("after");
-            list.Remove(3);
-            list.Display();
+
+            Console.WriteLine("List after removing duplicates:");
+
+            list.RemoveDuplicate();
+
+          
 
         }
 
