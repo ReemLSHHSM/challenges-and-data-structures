@@ -60,7 +60,12 @@ Remove_Method
 Display_Method   
 [Display whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Display.PNG "Visit Display")   
 Includes   
-[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Includes.PNG "Visit Includes")   
+[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Includes.PNG "Visit Includes")    
+
+## CC07:Linked List Remove Duplicates   
+Use your previous linked list implementation to include a new method for removing duplicate nodes from the LinkedList.   
+[Linked List Remove Duplicates whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Add_Node.PNG "Visit Linked List Remove Duplicates")   
+
 
 
 

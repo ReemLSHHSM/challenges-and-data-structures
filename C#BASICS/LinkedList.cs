@@ -63,8 +63,9 @@ namespace C_BASICS
 
 
         //Display all elemints
-        public void Display()
+        public string Display()
         {
+            string eliments = "";
             Node node = Head;
             if (Head != null) {
 
@@ -72,6 +73,7 @@ namespace C_BASICS
                 {
 
                     Console.WriteLine(node.Data);
+                    eliments += node.Data+" ";
                     node = node.Next;
                 }
             }
@@ -79,6 +81,7 @@ namespace C_BASICS
             {
                 Console.WriteLine("Linked List is empty");
             }
+            return eliments;
         }
         public bool Includes(int data)
         {
@@ -92,6 +95,48 @@ namespace C_BASICS
                 current = current.Next;
             }
             return false;
+        }
+
+        public string RemoveDuplicate()
+        {
+            Node current = Head;
+
+            try
+            {
+
+
+                while (current != null)
+                {
+                    Node pointer = current;
+                    while (pointer.Next != null)
+                    {
+
+                        if (pointer.Next.Data == current.Data)
+                        {
+                            pointer.Next = pointer.Next.Next;
+                        }
+                        else
+                        {
+                            pointer = pointer.Next;
+                        }
+
+                    }
+                    current = current.Next;
+                }
+
+              string eliments=  Display();
+                return eliments;
+
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine("A null reference exception occurred: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An unexpected error occurred: " + ex.Message);
+            }
+            return "";
         }
     }
 }
