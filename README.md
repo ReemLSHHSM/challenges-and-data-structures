@@ -52,6 +52,7 @@ Write a function called ReverseWords that accepts a string as its parameter. The
 
 ## Linked List
 Completing different Linked List operations like add,remove,diplay  
+
 Add_Method:  
 [Add whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Add_Node.PNG "Visit Add")   
 Remove_Method   
@@ -59,7 +60,12 @@ Remove_Method
 Display_Method   
 [Display whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Display.PNG "Visit Display")   
 Includes   
-[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Includes.PNG "Visit Includes")   
+[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Includes.PNG "Visit Includes")    
+
+## CC07:Linked List Remove Duplicates   
+Use your previous linked list implementation to include a new method for removing duplicate nodes from the LinkedList.   
+[Linked List Remove Duplicates whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Linked%20List%20Remove%20Duplicates/cc7.PNG "Visit Linked List Remove Duplicates")   
+
 
 
 
