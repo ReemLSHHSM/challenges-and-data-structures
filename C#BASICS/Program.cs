@@ -14,12 +14,13 @@ namespace C_BASICS
             list.addtoHead(new Node(4));
             list.addtoHead(new Node(4));
             list.addtoHead(new Node(5));
-
+             
             Console.WriteLine("Original list:");
-            list.Display();
-
+            list.PrintList();
+            Console.WriteLine(list.Includes(5));
+            list.Remove(5);
             Console.WriteLine("List after removing duplicates:");
-
+           
             list.RemoveDuplicate();
 
           

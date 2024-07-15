@@ -63,7 +63,7 @@ namespace C_BASICS
 
 
         //Display all elemints
-        public string Display()
+        public string PrintList()
         {
             string eliments = "";
             Node node = Head;
@@ -124,7 +124,7 @@ namespace C_BASICS
                     current = current.Next;
                 }
 
-              string eliments=  Display();
+              string eliments= PrintList();
                 return eliments;
 
             }
