@@ -1,5 +1,7 @@
 ﻿
 
+using System.Xml.Linq;
+
 namespace C_BASICS
 {
     public class Program
@@ -7,24 +9,32 @@ namespace C_BASICS
 
         static void Main(string[] args)
         {
-            LinkedList list = new LinkedList(new Node(1));
-            list.addtoHead(new Node(2));
-            list.addtoHead(new Node(2));
-            list.addtoHead(new Node(3));
-            list.addtoHead(new Node(4));
-            list.addtoHead(new Node(4));
+            LinkedList list = new LinkedList(new Node(7));
+            list.addtoHead(new Node(6));
             list.addtoHead(new Node(5));
-             
-            Console.WriteLine("Original list:");
-            list.PrintList();
-            Console.WriteLine(list.Includes(5));
-            list.Remove(5);
-            Console.WriteLine("List after removing duplicates:");
+
+            
+
+            //Console.WriteLine("Original list:");
+            //list.PrintList();
+            //Console.WriteLine(list.Includes(5));
+            //list.Remove(5);
+            //Console.WriteLine("List after removing duplicates:");
            
-            list.RemoveDuplicate();
+            //list.RemoveDuplicate();
 
+
+
+            LinkedList list2 = new LinkedList(new Node(3));
+            list2.addtoHead(new Node(2));
+            list2.addtoHead(new Node(1));
+
+            Console.WriteLine("Merged List:");
+            list.MergeSortedLists(list, list2);
+
+
+            
           
-
         }
 
 
