@@ -64,7 +64,11 @@ Includes
 
 ## CC07:Linked List Remove Duplicates   
 Use your previous linked list implementation to include a new method for removing duplicate nodes from the LinkedList.   
-[Linked List Remove Duplicates whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Linked%20List%20Remove%20Duplicates/cc7.PNG "Visit Linked List Remove Duplicates")   
+[Linked List Remove Duplicates whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Linked%20List%20Remove%20Duplicates/cc7.PNG "Visit Linked List Remove Duplicates")     
+
+## CC08:MergeSorted-LinkedLists   
+A method for merging two sorted linked lists into a single sorted linked list.   
+[ MergeSorted-LinkedLists](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Linked%20List%20Remove%20Duplicates/cc7.PNG "Visit  MergeSorted-LinkedLists")   
 
 
 

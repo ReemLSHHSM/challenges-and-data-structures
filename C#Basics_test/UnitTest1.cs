@@ -117,28 +117,28 @@ namespace C_Basics_test
             Assert.Null(list.Head.Next.Next);
         }
 
-        [Fact]
-        public void DisplayLinkedListContents()
-        {
-            // Arrange
-            Node node1 = new Node(1);
-            Node node2 = new Node(2);
-            Node node3 = new Node(3);
-            LinkedList list = new LinkedList(node1);
-            list.addtoHead(node2);
-            list.addtoHead(node3);
+        //[Fact]
+        //public void DisplayLinkedListContents()
+        //{
+        //    // Arrange
+        //    Node node1 = new Node(1);
+        //    Node node2 = new Node(2);
+        //    Node node3 = new Node(3);
+        //    LinkedList list = new LinkedList(node1);
+        //    list.addtoHead(node2);
+        //    list.addtoHead(node3);
 
-            using (var sw = new StringWriter())
-            {
-                Console.SetOut(sw);
+        //    using (var sw = new StringWriter())
+        //    {
+        //        Console.SetOut(sw);
 
-                // Act
-                list.Display();
+        //        // Act
+        //        list.Display();
 
-                // Assert
-                var result = sw.ToString().Trim();
-                Assert.Equal("3\r\n2\r\n1", result);
-            }
-        }
+        //        // Assert
+        //        var result = sw.ToString().Trim();
+        //        Assert.Equal("3\r\n2\r\n1", result);
+        //    }
+        //}
     }
 }

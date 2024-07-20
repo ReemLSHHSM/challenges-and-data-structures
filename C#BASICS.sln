@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#Basics_test", "C#Basics_test\C#Basics_test.csproj", "{1673CD02-C593-4AF9-9EB8-A1C92F9AAA7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#Basics_test", "C#Basics_test\C#Basics_test.csproj", "{1673CD02-C593-4AF9-9EB8-A1C92F9AAA7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
