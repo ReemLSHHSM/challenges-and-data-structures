@@ -83,6 +83,9 @@ namespace C_BASICS
             }
             return eliments;
         }
+
+
+
         public bool Includes(int data)
         {
             Node current = Head;
@@ -139,51 +142,62 @@ namespace C_BASICS
             return "";
         }
 
-        public void MergeSortedLists(LinkedList list1, LinkedList list2)
+        public string MergeSortedLists(LinkedList list1, LinkedList list2)
         {
             if (list1.Head == null)
             {
                 list1.Head = list2.Head;
-                return;
+                list2.PrintList();
+                return "";
             }
             else if (list2.Head == null)
             {
-                return;
+                list1.PrintList();
+                return "";
             }
-
-            Node dummy = new Node(0);
-            Node current = dummy;
-
-            Node current1 = list1.Head;
-            Node current2 = list2.Head;
-
-            while (current1 != null && current2 != null)
+           else  if(list1.Head==null && list2.Head == null)
             {
-                if (current1.Data < current2.Data)
-                {
-                    current.Next = current1;
-                    current1 = current1.Next;
-                }
-                else
-                {
-                    current.Next = current2;
-                    current2 = current2.Next;
-                }
-                current = current.Next;
-            }
-
-            if (current1 != null)
-            {
-                current.Next = current1;
+                Console.WriteLine("Both lists are empty");
+                return "Both lists are empty";
             }
             else
             {
-                current.Next = current2;
+
+
+                Node dummy = new Node(0);
+                Node current = dummy;
+
+                Node current1 = list1.Head;
+                Node current2 = list2.Head;
+
+                while (current1 != null && current2 != null)
+                {
+                    if (current1.Data <= current2.Data)
+                    {
+                        current.Next = current1;
+                        current1 = current1.Next;
+                    }
+                    else
+                    {
+                        current.Next = current2;
+                        current2 = current2.Next;
+                    }
+                    current = current.Next;
+                }
+
+                if (current1 != null)
+                {
+                    current.Next = current1;
+                }
+                if (current2 != null)
+                {
+                    current.Next = current2;
+                }
+
+                list1.Head = dummy.Next;
+                PrintList();
+                return "";
             }
-
-            list1.Head = dummy.Next;
-
-            PrintList();
         }
 
 

@@ -32,9 +32,14 @@ namespace C_BASICS
             Console.WriteLine("Merged List:");
             list.MergeSortedLists(list, list2);
 
+            LinkedList list3= new LinkedList(null);
+            LinkedList list4 = new LinkedList(new Node(3));
+            list4.addtoHead(new Node(2));
+            list4.addtoHead(new Node(1));
 
-            
-          
+            Console.WriteLine("Merged empty list:");
+            list3.MergeSortedLists(list4, list3);
+
         }
 
 
