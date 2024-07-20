@@ -68,7 +68,7 @@ Use your previous linked list implementation to include a new method for removin
 
 ## CC08:MergeSorted-LinkedLists   
 A method for merging two sorted linked lists into a single sorted linked list.   
-[ MergeSorted-LinkedLists](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Linked%20List%20Remove%20Duplicates/cc7.PNG "Visit  MergeSorted-LinkedLists")   
+[ MergeSorted-LinkedLists](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/LinkedList-Merge-Sorted/C%23BASICS/MergeSorted-LinkedLists/cc08.PNG?raw=true "Visit  MergeSorted-LinkedLists")   
 
 
 
