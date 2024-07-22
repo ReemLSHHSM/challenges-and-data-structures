@@ -9,11 +9,16 @@ namespace C_BASICS
     public class LinkedList
     {
 
-        public Node Head ;
+        public Node Head;
 
         public LinkedList(Node head)
         {
             this.Head = head;
+        }
+
+        public LinkedList()
+        {
+
         }
 
         //Adding node at the beginning of the list
@@ -33,14 +38,14 @@ namespace C_BASICS
                 return;
             }
 
-        
+
             if (Head.Data == data)
             {
-                Head = Head.Next; 
+                Head = Head.Next;
                 return;
             }
 
-          
+
             Node current = Head;
             Node previous = null;
 
@@ -50,14 +55,14 @@ namespace C_BASICS
                 current = current.Next;
             }
 
-         
+
             if (current == null)
             {
                 Console.WriteLine("Node with data not found.", data);
                 return;
             }
 
-          
+
             previous.Next = current.Next;
         }
 
@@ -73,7 +78,7 @@ namespace C_BASICS
                 {
 
                     Console.WriteLine(node.Data);
-                    eliments += node.Data+" ";
+                    eliments += node.Data + " ";
                     node = node.Next;
                 }
             }
@@ -127,7 +132,7 @@ namespace C_BASICS
                     current = current.Next;
                 }
 
-              string eliments= PrintList();
+                string eliments = PrintList();
                 return eliments;
 
             }
@@ -142,62 +147,45 @@ namespace C_BASICS
             return "";
         }
 
-        public string MergeSortedLists(LinkedList list1, LinkedList list2)
+        public LinkedList MergeSorted(LinkedList link1, LinkedList link2)
         {
-            if (list1.Head == null)
+
+            Node dummy = new Node();
+            Node tail = dummy;
+
+            Node current1 = link1.Head;
+            Node current2 = link2.Head;
+
+
+            while (current1 != null && current2 != null)
             {
-                list1.Head = list2.Head;
-                list2.PrintList();
-                return "";
+                if (current1.Data < current2.Data)
+                {
+                    tail.Next = current1;
+                    current1 = current1.Next;
+                }
+                else
+                {
+                    tail.Next = current2;
+                    current2 = current2.Next;
+                }
+                tail = tail.Next;
             }
-            else if (list2.Head == null)
+
+            if (current1 != null)
             {
-                list1.PrintList();
-                return "";
-            }
-           else  if(list1.Head==null && list2.Head == null)
-            {
-                Console.WriteLine("Both lists are empty");
-                return "Both lists are empty";
+                tail.Next = current1;
             }
             else
             {
-
-
-                Node dummy = new Node(0);
-                Node current = dummy;
-
-                Node current1 = list1.Head;
-                Node current2 = list2.Head;
-
-                while (current1 != null && current2 != null)
-                {
-                    if (current1.Data <= current2.Data)
-                    {
-                        current.Next = current1;
-                        current1 = current1.Next;
-                    }
-                    else
-                    {
-                        current.Next = current2;
-                        current2 = current2.Next;
-                    }
-                    current = current.Next;
-                }
-
-                if (current1 != null)
-                {
-                    current.Next = current1;
-                }
-                if (current2 != null)
-                {
-                    current.Next = current2;
-                }
-
-                list1.Head = dummy.Next;
-                PrintList();
-                return "";
+                tail.Next = current2;
             }
+
+            LinkedList result = new LinkedList();
+            result.Head = dummy.Next;
+
+            result.PrintList();
+            return result;
         }
 
 
