@@ -68,7 +68,27 @@ Use your previous linked list implementation to include a new method for removin
 
 ## CC08:MergeSorted-LinkedLists   
 A method for merging two sorted linked lists into a single sorted linked list.   
-[ MergeSorted-LinkedLists](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/MergeSorted-LinkedLists/cc08.PNG?raw=true "Visit  MergeSorted-LinkedLists")   
+[ MergeSorted-LinkedLists](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/MergeSorted-LinkedLists/cc08.PNG?raw=true "Visit  MergeSorted-LinkedLists")      
+
+## CC09:Stack
+Definition: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. You can only access the most recently added item. It supports operations:
+1. push: Add an item to the top.
+2. pop: Remove and return the top item.
+3. peek: Return the top item without removing it.
+4. isEmpty: Check if the stack is empty.   
+[Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/C%23BASICS/Stack%20%26%20Queue/cc08%20stack.PNG "Visit Stack")      
+
+## CC09:Queue
+Definition: A queue is a linear data structure that follows the First In, First Out (FIFO) principle. Elements are added at the back and removed from the front. It supports the following operations:
+1. Enqueue: Add an item to the back of the queue.
+2. Dequeue: Remove and return the item from the front of the queue.
+3. Peek: Return the item at the front without removing it.
+4. IsEmpty: Check if the queue is empty.
+   
+[Queue](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/C%23BASICS/Stack%20%26%20Queue/cc08queue.PNG "Visit Queue")      
+
+
+
 
 
 
