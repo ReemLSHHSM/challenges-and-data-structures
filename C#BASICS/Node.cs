@@ -11,14 +11,17 @@ namespace C_BASICS
         public int Data {  get; set; }
         public Node Next { get; set; }
 
-        public Node() { 
         
-        
+
+        public Node() {
+           
+            this.Next = null;
         }
 
         public Node(int data) { 
         
         this.Data = data;
+            this.Next = null;
         }
     }
 }

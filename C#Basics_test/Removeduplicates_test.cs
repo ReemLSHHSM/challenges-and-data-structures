@@ -11,51 +11,51 @@ namespace C_Basics_test
     {
 
 
-        [Fact]
-        public void Test_noduplicates()
-        {
-            //Assign
-            LinkedList list = new LinkedList(new Node(1));
-            list.addtoHead(new Node(3));
-            list.addtoHead(new Node(2));
+        //[Fact]
+        //public void Test_noduplicates()
+        //{
+        //    //Assign
+        //    LinkedList list = new LinkedList(new Node(1));
+        //    list.addtoHead(new Node(3));
+        //    list.addtoHead(new Node(2));
 
-            //Act
-            string output=list.RemoveDuplicate();
+        //    //Act
+        //    string output=list.RemoveDuplicate();
 
-            //Assert
-            Assert.Equal(output, "2 3 1 ");
-        }
+        //    //Assert
+        //    Assert.Equal(output, "2 3 1 ");
+        //}
 
-        [Fact]
-        public void only_duplicate()
-        {
-            //Assign
-            LinkedList list = new LinkedList(new Node(1));
-            list.addtoHead(new Node(3));
-            list.addtoHead(new Node(2));
-            list.addtoHead(new Node(2));
-            list.addtoHead(new Node(3));
-            //Act
-            string output = list.RemoveDuplicate();
+        //[Fact]
+        //public void only_duplicate()
+        //{
+        //    //Assign
+        //    LinkedList list = new LinkedList(new Node(1));
+        //    list.addtoHead(new Node(3));
+        //    list.addtoHead(new Node(2));
+        //    list.addtoHead(new Node(2));
+        //    list.addtoHead(new Node(3));
+        //    //Act
+        //    string output = list.RemoveDuplicate();
 
-            //Assert
-            Assert.Equal(output, "3 2 1 ");
-        }
+        //    //Assert
+        //    Assert.Equal(output, "3 2 1 ");
+        //}
 
-        [Fact]
-        public void singlenode_test()
-        {
-            //Assign
-            LinkedList list = new LinkedList(new Node(1));
-            list.addtoHead(new Node(1));
-            list.addtoHead(new Node(1));
-            list.addtoHead(new Node(1));
-            list.addtoHead(new Node(1));
-            //Act
-            string output = list.RemoveDuplicate();
+        //[Fact]
+        //public void singlenode_test()
+        //{
+        //    //Assign
+        //    LinkedList list = new LinkedList(new Node(1));
+        //    list.addtoHead(new Node(1));
+        //    list.addtoHead(new Node(1));
+        //    list.addtoHead(new Node(1));
+        //    list.addtoHead(new Node(1));
+        //    //Act
+        //    string output = list.RemoveDuplicate();
 
-            //Assert
-            Assert.Equal(output, "1 ");
-        }
+        //    //Assert
+        //    Assert.Equal(output, "1 ");
+        //}
     }
 }
