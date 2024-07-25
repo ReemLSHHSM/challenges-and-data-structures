@@ -75,7 +75,8 @@ Definition: A stack is a linear data structure that follows the Last In, First O
 1. push: Add an item to the top.
 2. pop: Remove and return the top item.
 3. peek: Return the top item without removing it.
-4. isEmpty: Check if the stack is empty.   
+4. isEmpty: Check if the stack is empty.
+   
 [Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/C%23BASICS/Stack%20%26%20Queue/cc08%20stack.PNG "Visit Stack")      
 
 ## CC09:Queue
