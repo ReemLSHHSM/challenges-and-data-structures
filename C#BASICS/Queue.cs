@@ -63,6 +63,10 @@ namespace C_BASICS
 
         public int Peek()
         {
+            if (IsEmpty())
+            {
+                throw new InvalidOperationException("Queue is empty.");
+            }
             return front.Data;
         }
     }
