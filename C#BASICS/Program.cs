@@ -14,59 +14,69 @@ namespace C_BASICS
             //list.addtoHead(new Node(5));
             //list.addtoHead(new Node(4));
 
-            
+
 
             //Console.WriteLine("Original list:");
             //list.PrintList();
             //Console.WriteLine(list.Includes(5));
             //list.Remove(5);
             //Console.WriteLine("List after removing duplicates:");
-           
+
             //list.RemoveDuplicate();
 
 
 
             //LinkedList list2 = new LinkedList(new Node(3));
             //list2.addtoHead(new Node(2));
-           
+
             //list2.addtoHead(new Node(0));
             //list2.addtoHead(new Node(0));
             //list2.addtoHead(new Node(1));
             //Console.WriteLine("Merged List:");
             //list.MergeSorted(list, list2);
-            
+
             //Stack
-            Stack stack= new Stack();
+            //Stack stack= new Stack();
 
-            Console.WriteLine(stack.isEmpty());
+            //Console.WriteLine(stack.isEmpty());
 
+            //stack.push(1);
+            //stack.push(2);
+            //stack.push(3);
+            //Console.WriteLine(stack.isEmpty());
+
+            //Console.WriteLine($"{stack.Pop()} was poped");
+
+            //Console.WriteLine($"Top of the stack is {stack.Peek()}");
+
+            //Queue
+            //  Queue queue= new Queue();
+            //Console.WriteLine("Before enqueueing");
+            //Console.WriteLine(queue.IsEmpty());
+
+            //queue.Enqueue(5);
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+
+            //Console.WriteLine("After enqueueing");
+            //Console.WriteLine(queue.IsEmpty());
+
+            //Console.Write("this data was poped: ");
+            //Console.WriteLine(queue.Dequeue());
+
+            //Console.Write("First in queue is: ");
+            //Console.WriteLine(queue.Peek());
+
+            Console.WriteLine("Before reversing");
+            StackWithReverse stack = new StackWithReverse();
             stack.push(1);
             stack.push(2);
             stack.push(3);
-            Console.WriteLine(stack.isEmpty());
+            Console.WriteLine("After reversing");
+            stack.ReverseStack();
 
-            Console.WriteLine($"{stack.Pop()} was poped");
 
-            Console.WriteLine($"Top of the stack is {stack.Peek()}");
-
-            //Queue
-              Queue queue= new Queue();
-            Console.WriteLine("Before enqueueing");
-            Console.WriteLine(queue.IsEmpty());
-
-            queue.Enqueue(5);
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-
-            Console.WriteLine("After enqueueing");
-            Console.WriteLine(queue.IsEmpty());
-
-            Console.Write("this data was poped: ");
-            Console.WriteLine(queue.Dequeue());
-
-            Console.Write("First in queue is: ");
-            Console.WriteLine(queue.Peek());
         }
 
 

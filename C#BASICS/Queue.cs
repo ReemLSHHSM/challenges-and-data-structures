@@ -39,7 +39,7 @@ namespace C_BASICS
             }
 
             back = newData;
-            Console.WriteLine(back.Data);
+           // Console.WriteLine(back.Data);
 
         }
 

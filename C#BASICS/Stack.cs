@@ -9,10 +9,10 @@ namespace C_BASICS
     public class Stack
     {
 
-        Node top;
+       public Node top;
         public Stack()
         {
-            top = null;
+            top = new Node();
 
         }
 
@@ -36,7 +36,7 @@ namespace C_BASICS
 
         public int Pop()
         {
-            if (isEmpty())
+            if (isEmpty() ||top==null)
             {
                 throw new InvalidOperationException("Stack is empty.");
             }
