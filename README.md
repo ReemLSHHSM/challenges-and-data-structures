@@ -92,7 +92,7 @@ Definition: A queue is a linear data structure that follows the First In, First 
 ## CC10:Stack & Queue: Reverse a Stack using Queue
 Implement a method to reverse a stack using a queue in C#.
    
-[ReverseStack](../ReverseStackUsingQueue/cc10.PNG "Visit ReverseStack")      
+[ReverseStack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/ReverseStackUsingQueue/cc10.PNG "Visit ReverseStack")      
 
 
 
