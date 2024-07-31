@@ -86,7 +86,15 @@ Definition: A queue is a linear data structure that follows the First In, First 
 3. Peek: Return the item at the front without removing it.
 4. IsEmpty: Check if the queue is empty.
    
-[Queue](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/C%23BASICS/Stack%20%26%20Queue/cc08queue.PNG "Visit Queue")      
+[Queue](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/C%23BASICS/Stack%20%26%20Queue/cc08queue.PNG "Visit Queue")    
+
+
+## CC10:Stack & Queue: Reverse a Stack using Queue
+Implement a method to reverse a stack using a queue in C#.
+   
+[ReverseStack](../ReverseStackUsingQueue/cc10.PNG "Visit ReverseStack")      
+
+
 
 
 
