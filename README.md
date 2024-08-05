@@ -92,12 +92,14 @@ Definition: A queue is a linear data structure that follows the First In, First 
 ## CC10:Stack & Queue: Reverse a Stack using Queue
 Implement a method to reverse a stack using a queue in C#.
    
+
 [ReverseStack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/ReverseStackUsingQueue/cc10.PNG "Visit ReverseStack")        
 
 ## CC11:Delete Middle Element of a Stack
 Implement a method to delete the middle element of a stack in C#. If the stack has an even number of elements, remove the lower middle element.
    
 [Delete Middle Element of a Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Delete-Middle-Element-Stack/C%23BASICS/DeleteMiddleElement/cc11.PNG?raw=true "Visit Delete Middle Element of a Stack")      
+
 
 
 
