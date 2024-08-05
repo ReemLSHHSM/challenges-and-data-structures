@@ -9,6 +9,7 @@ namespace C_BASICS
     public class StackWithReverse:Stack
     {
         Queue queue=new Queue();
+          public int count = 0;
         public bool ReverseStack()
         {
             try
