@@ -68,15 +68,19 @@ namespace C_BASICS
             //Console.Write("First in queue is: ");
             //Console.WriteLine(queue.Peek());
 
-            Console.WriteLine("Before reversing");
-            StackWithReverse stack = new StackWithReverse();
-            stack.push(1);
-            stack.push(2);
-            stack.push(3);
-            Console.WriteLine("After reversing");
-            stack.ReverseStack();
+            Console.WriteLine("Before removing middle");
+            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+           stack.push(1);
+           stack.push(2);
+           stack.push(3);
 
-
+           stack.display();
+           
+            //Console.WriteLine("After reversing");
+            //stack.ReverseStack();
+            Console.WriteLine("After removing middle");
+            stack.DeleteMiddle();
+            stack.display();
         }
 
 
