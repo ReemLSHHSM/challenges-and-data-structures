@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_BASICS
+namespace C_BASICS.LinkedList
 {
     public class LinkedList
     {
@@ -13,7 +13,7 @@ namespace C_BASICS
 
         public LinkedList(Node head)
         {
-            this.Head = head;
+            Head = head;
         }
 
         public LinkedList()
@@ -72,7 +72,8 @@ namespace C_BASICS
         {
             string eliments = "";
             Node node = Head;
-            if (Head != null) {
+            if (Head != null)
+            {
 
                 while (node != null)
                 {
