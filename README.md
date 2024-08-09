@@ -102,7 +102,7 @@ Implement a method to delete the middle element of a stack in C#. If the stack h
 
 ## CC12:Min Stack
 Implement MinStack class in C# that uses these operations below and retrieves the minimum element in constant time complexity.   
-[Min Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Delete-Middle-Element-Stack/C%23BASICS/DeleteMiddleElement/cc11.PNG?raw=true "Visit Min Stack")
+[Min Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Min Stack")
 
 
 
