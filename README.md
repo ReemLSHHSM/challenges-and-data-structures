@@ -98,7 +98,11 @@ Implement a method to reverse a stack using a queue in C#.
 ## CC11:Delete Middle Element of a Stack
 Implement a method to delete the middle element of a stack in C#. If the stack has an even number of elements, remove the lower middle element.
    
-[Delete Middle Element of a Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Delete-Middle-Element-Stack/C%23BASICS/DeleteMiddleElement/cc11.PNG?raw=true "Visit Delete Middle Element of a Stack")      
+[Delete Middle Element of a Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Delete-Middle-Element-Stack/C%23BASICS/DeleteMiddleElement/cc11.PNG?raw=true "Visit Delete Middle Element of a Stack")    
+
+## CC12:Min Stack
+Implement MinStack class in C# that uses these operations below and retrieves the minimum element in constant time complexity.   
+[Min Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Delete-Middle-Element-Stack/C%23BASICS/DeleteMiddleElement/cc11.PNG?raw=true "Visit Min Stack")
 
 
 
