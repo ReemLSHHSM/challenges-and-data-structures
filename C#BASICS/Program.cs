@@ -1,6 +1,7 @@
 ﻿
 using System.Xml.Linq;
 using C_BASICS.MinStack;
+using C_BASICS.Trees;
 
 namespace C_BASICS
 {
@@ -10,13 +11,16 @@ namespace C_BASICS
         static void Main(string[] args)
         {
 
-            MinStack.MinStack stack = new MinStack.MinStack();
-            stack.push(2);
-            stack.push(3);
-            stack.push(1);
-            stack.push(2);
-            stack.push(5);
-            Console.WriteLine(stack.GetMin());
+            BinarySearchTree tree = new BinarySearchTree(10);
+
+            tree.Add(3);
+
+            tree.Add(1);
+            tree.Add(5);
+            tree.Add(2);
+            tree.Add(7);
+
+            Console.WriteLine(tree.Contains(0));
 
         }
 
