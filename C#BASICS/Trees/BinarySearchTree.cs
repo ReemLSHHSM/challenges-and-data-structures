@@ -160,6 +160,24 @@ namespace C_BASICS.Trees
             return current;
         }
 
+        public void Mirror(TNode node)
+        {
+            if (node == null)
+            {
+                return; 
+            }
+             Mirror(node.Left);
+            Mirror(node.Right);
 
+            TNode temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
+        }
+
+        public void Mirror()
+        {
+            Mirror(Root); 
+        }
     }
+
 }
