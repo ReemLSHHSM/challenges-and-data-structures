@@ -107,7 +107,12 @@ Implement MinStack class in C# that uses these operations below and retrieves th
 ## CC13:Binary Tree and Binary Search Tree Implementation
 Implement MinStack class in C# that uses these operations below and retrieves the minimum element in constant time complexity.   
 [White Board](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit White board")   
-[Real Code](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Real Code")
+[Real Code](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Real Code")    
+
+## CC12:Binary Tree - Mirror Tree
+To create a mirror image of a binary tree, where the left and right subtrees are swapped at each node.
+[Binary Tree - Mirror Tree](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Binary Tree - Mirror Tree")   
+
 
 
 

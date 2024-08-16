@@ -1,9 +1,7 @@
 ﻿using C_BASICS.Trees;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Xunit;
 
 namespace C_Basics_test
 {
@@ -101,6 +99,50 @@ namespace C_Basics_test
             Assert.True(bst.Contains(15));
             Assert.True(bst.Contains(2));
             Assert.True(bst.Contains(7));
+        }
+
+        [Fact]
+        public void TestMirror_Tree()
+        {
+            var bst = new BinarySearchTree(10);
+            bst.Add(5);
+            bst.Add(15);
+            bst.Add(2);
+            bst.Add(7);
+            bst.Add(12);
+            bst.Add(20);
+
+            bst.Mirror();
+
+            var expected = new List<int> { 20, 15, 12, 10, 7, 5, 2 };
+            var result = InOrderTraversal(bst.Root);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestMirror_SingleNodeTree()
+        {
+            var bst = new BinarySearchTree(10);
+
+            bst.Mirror();
+
+            var expected = new List<int> { 10 };
+            var result = InOrderTraversal(bst.Root);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestMirror_EmptyTree()
+        {
+            var bst = new BinarySearchTree(0); 
+            bst.Mirror();
+
+            var expected = new List<int>();
+            var result = InOrderTraversal(bst.Root);
+
+            Assert.Equal(expected, result);
         }
 
         private List<int> PreOrderTraversal(TNode node)

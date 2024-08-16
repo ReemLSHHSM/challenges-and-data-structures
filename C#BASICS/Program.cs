@@ -21,7 +21,7 @@ namespace C_BASICS
             tree.Add(7);
 
             Console.WriteLine(tree.Contains(0));
-
+            tree.Mirror();
         }
 
 
