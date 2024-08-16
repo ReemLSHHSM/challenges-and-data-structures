@@ -109,9 +109,9 @@ Implement MinStack class in C# that uses these operations below and retrieves th
 [White Board](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit White board")   
 [Real Code](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Real Code")    
 
-## CC12:Binary Tree - Mirror Tree
+## CC14:Binary Tree - Mirror Tree
 To create a mirror image of a binary tree, where the left and right subtrees are swapped at each node.
-[Binary Tree - Mirror Tree](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Binary Tree - Mirror Tree")   
+[Binary Tree - Mirror Tree](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Mirror-Tree/C%23BASICS/Trees/cc14.PNG?raw=true "Visit Binary Tree - Mirror Tree")   
 
 
 
