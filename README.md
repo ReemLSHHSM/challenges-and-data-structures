@@ -113,7 +113,12 @@ Implement MinStack class in C# that uses these operations below and retrieves th
 ## CC14:Binary Tree - Mirror Tree
 To create a mirror image of a binary tree, where the left and right subtrees are swapped at each node.   
 
-[Binary Tree - Mirror Tree](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Mirror-Tree/C%23BASICS/Trees/cc14.PNG?raw=true "Visit Binary Tree - Mirror Tree")   
+[Binary Tree - Mirror Tree](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Mirror-Tree/C%23BASICS/Trees/cc14.PNG?raw=true "Visit Binary Tree - Mirror Tree")      
+
+## CC14:Binary Tree - Second Maximum Value
+To create a mirror image of a binary tree, where the left and right subtrees are swapped at each node.   
+
+[Binary Tree - Second Maximum Value](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Mirror-Tree/C%23BASICS/Trees/cc14.PNG?raw=true "Visit Binary Tree - Second Maximum Value")   
 
 
 

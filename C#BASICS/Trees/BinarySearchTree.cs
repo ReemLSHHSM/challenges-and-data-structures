@@ -182,47 +182,62 @@ namespace C_BASICS.Trees
 
 
         int second_max = 0;
-        public void second_maximum_value_left(TNode node)
+        public int? SecondMaximumValueLeft(TNode node)
         {
+            if (node.Left == null)
+                return null;
 
-            if (node.Left != null)
+            if (node.Left.Right == null)
             {
-                second_max = node.Left.Data;
-                Console.WriteLine(second_max);
-                return;
+                return node.Left.Data;
             }
 
-           
+            return SecondMaximumValueLeft(node.Left);
         }
 
 
 
-        public void second_maximum_value_right(TNode node)
+
+        public int? SecondMaximumValueRight(TNode node)
         {
-            if (node.Right.Right== null)
+            if (node.Right == null)
+                return null;
+
+            if (node.Right.Left == null && node.Right.Right == null)
             {
-                second_max = node.Right.Data;
-                Console.WriteLine(second_max);
-                return;
+                return node.Right.Data;
             }
 
-            second_maximum_value_right(node.Right);
-
-
+  
+            if (node.Right.Left != null)
+            {
+                TNode temp = node.Right.Left;
+                while (temp.Right != null)
+                {
+                    temp = temp.Right;
+                }
+                return temp.Data;
+            }
+            return SecondMaximumValueRight(node.Right);
         }
 
 
-        public void second_maximum_value()
+
+        public int? SecondMaximumValue()
         {
-            if(Root.Right!= null)
+            if (Root == null)
+                return null;
+
+            if (Root.Right != null)
             {
-                second_maximum_value_right(Root);
-               
+                return SecondMaximumValueRight(Root);
             }
-            else
+            else if (Root.Left != null)
             {
-                second_maximum_value_left(Root);
+                return SecondMaximumValueLeft(Root);
             }
+
+            return null;
         }
 
 
