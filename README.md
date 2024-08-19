@@ -118,7 +118,7 @@ To create a mirror image of a binary tree, where the left and right subtrees are
 ## CC14:Binary Tree - Second Maximum Value
 Using your binary tree implementation, find the second maximum value in a binary tree.
 
-[Binary Tree - Second Maximum Value](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Mirror-Tree/C%23BASICS/Trees/cc14.PNG?raw=true "Visit Binary Tree - Second Maximum Value")   
+[Binary Tree - Second Maximum Value](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Trees/cc15.PNG?raw=true "Visit Binary Tree - Second Maximum Value")   
 
 
 
