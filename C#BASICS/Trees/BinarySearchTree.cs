@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace C_BASICS.Trees
 {
@@ -78,7 +79,7 @@ namespace C_BASICS.Trees
         bool exist = false;
         public bool Contains(int data, TNode node)
         {
-            
+
 
             if (node != null && exist != true)
             {
@@ -164,9 +165,9 @@ namespace C_BASICS.Trees
         {
             if (node == null)
             {
-                return; 
+                return;
             }
-             Mirror(node.Left);
+            Mirror(node.Left);
             Mirror(node.Right);
 
             TNode temp = node.Left;
@@ -176,8 +177,59 @@ namespace C_BASICS.Trees
 
         public void Mirror()
         {
-            Mirror(Root); 
+            Mirror(Root);
         }
-    }
 
+
+        int second_max = 0;
+        public void second_maximum_value_left(TNode node)
+        {
+
+            if (node.Left != null)
+            {
+                second_max = node.Left.Data;
+                Console.WriteLine(second_max);
+                return;
+            }
+
+           
+        }
+
+
+
+        public void second_maximum_value_right(TNode node)
+        {
+            if (node.Right.Right== null)
+            {
+                second_max = node.Right.Data;
+                Console.WriteLine(second_max);
+                return;
+            }
+
+            second_maximum_value_right(node.Right);
+
+
+        }
+
+
+        public void second_maximum_value()
+        {
+            if(Root.Right!= null)
+            {
+                second_maximum_value_right(Root);
+               
+            }
+            else
+            {
+                second_maximum_value_left(Root);
+            }
+        }
+
+
+
+    }
 }
+          
+     
+
+
