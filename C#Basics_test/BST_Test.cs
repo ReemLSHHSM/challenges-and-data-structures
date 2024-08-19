@@ -192,5 +192,43 @@ namespace C_Basics_test
             PostOrder(node.Right, result);
             result.Add(node.Data);
         }
+
+        [Fact]
+        public void TestFindingSecondMaximumValue()
+        {
+            var bst = new BinarySearchTree(10);
+            bst.Add(5);
+            bst.Add(20);
+            bst.Add(15);
+
+            var secondMax = bst.SecondMaximumValue();
+
+            Assert.Equal(15, secondMax);
+        }
+
+        [Fact]
+        public void TestTreeWithFewerThanTwoUniqueValues()
+        {
+            var bst = new BinarySearchTree(10);
+            bst.Add(10);
+            bst.Add(10);
+
+            var secondMax = bst.SecondMaximumValue();
+
+            Assert.Null(secondMax);
+        }
+
+        [Fact]
+        public void TestTreeWithNegativeValues()
+        {
+            var bst = new BinarySearchTree(-10);
+            bst.Add(-20);
+            bst.Add(-5);
+            bst.Add(-15);
+
+            var secondMax = bst.SecondMaximumValue();
+
+            Assert.Equal(-10, secondMax);
+        }
     }
 }

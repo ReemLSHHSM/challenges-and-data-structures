@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace C_BASICS.Trees
 {
@@ -78,7 +79,7 @@ namespace C_BASICS.Trees
         bool exist = false;
         public bool Contains(int data, TNode node)
         {
-            
+
 
             if (node != null && exist != true)
             {
@@ -164,9 +165,9 @@ namespace C_BASICS.Trees
         {
             if (node == null)
             {
-                return; 
+                return;
             }
-             Mirror(node.Left);
+            Mirror(node.Left);
             Mirror(node.Right);
 
             TNode temp = node.Left;
@@ -176,8 +177,74 @@ namespace C_BASICS.Trees
 
         public void Mirror()
         {
-            Mirror(Root); 
+            Mirror(Root);
         }
-    }
 
+
+        int second_max = 0;
+        public int? SecondMaximumValueLeft(TNode node)
+        {
+            if (node.Left == null)
+                return null;
+
+            if (node.Left.Right == null)
+            {
+                return node.Left.Data;
+            }
+
+            return SecondMaximumValueLeft(node.Left);
+        }
+
+
+
+
+        public int? SecondMaximumValueRight(TNode node)
+        {
+            if (node.Right == null)
+                return null;
+
+            if (node.Right.Left == null && node.Right.Right == null)
+            {
+                return node.Right.Data;
+            }
+
+  
+            if (node.Right.Left != null)
+            {
+                TNode temp = node.Right.Left;
+                while (temp.Right != null)
+                {
+                    temp = temp.Right;
+                }
+                return temp.Data;
+            }
+            return SecondMaximumValueRight(node.Right);
+        }
+
+
+
+        public int? SecondMaximumValue()
+        {
+            if (Root == null)
+                return null;
+
+            if (Root.Right != null)
+            {
+                return SecondMaximumValueRight(Root);
+            }
+            else if (Root.Left != null)
+            {
+                return SecondMaximumValueLeft(Root);
+            }
+
+            return null;
+        }
+
+
+
+    }
 }
+          
+     
+
+
