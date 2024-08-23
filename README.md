@@ -123,7 +123,7 @@ Using your binary tree implementation, find the second maximum value in a binary
 ## CC16:Binary Tree - Sum of leaf nodes
 Using your binary tree implementation, find the second maximum value in a binary tree.
 
-[Binary Tree - Sum of leaf nodes](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Trees/cc15.PNG?raw=true "Visit Binary Tree - Sum of leaf nodes")   
+[Binary Tree - Sum of leaf nodes](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Leaf-Sum/C%23BASICS/Trees/cc16.PNG "Visit Binary Tree - Sum of leaf nodes")   
 
 
 
