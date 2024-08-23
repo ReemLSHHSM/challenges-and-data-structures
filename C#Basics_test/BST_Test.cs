@@ -1,4 +1,5 @@
-﻿using C_BASICS.Trees;
+﻿using C_BASICS;
+using C_BASICS.Trees;
 using System;
 using System.Collections.Generic;
 using Xunit;
@@ -229,6 +230,48 @@ namespace C_Basics_test
             var secondMax = bst.SecondMaximumValue();
 
             Assert.Equal(-10, secondMax);
+        }
+
+        [Fact]
+        public void test_positive()
+        {
+            //Arrange
+            var bst = new BinarySearchTree(-10);
+            bst.Root = new TNode(9);
+            bst.Root.Left = new TNode(8);
+            bst.Root.Right = new TNode(12);
+            bst.Root.Left.Left = new TNode(3);
+            bst.Root.Left.Right = new TNode(7);
+            bst.Root.Right.Left = new TNode(17);
+            bst.Root.Right.Right = new TNode(23);
+            bst.Root.Left.Left.Right = new TNode(4);
+
+            //Act
+           int sum= bst.LeafSum();
+            int expected_sum = 51;
+
+            //Assert
+            Assert.Equal(expected_sum, sum);
+        }
+
+        public void test_negative()
+        {
+            //Arrange
+            var bst = new BinarySearchTree(-9);
+            bst.Root.Left = new TNode(-8);
+            bst.Root.Right = new TNode(-12);
+            bst.Root.Left.Left = new TNode(-3);
+            bst.Root.Left.Right = new TNode(-7);
+            bst.Root.Right.Left = new TNode(-17);
+            bst.Root.Right.Right = new TNode(-23);
+            bst.Root.Left.Left.Right = new TNode(-4);
+
+            //Act
+            int expectedSum = -4 + -7 + -17 + -23;
+            int actualSum = bst.LeafSum();
+
+            //Assert
+            Assert.Equal(expectedSum, actualSum);
         }
     }
 }

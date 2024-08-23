@@ -240,6 +240,24 @@ namespace C_BASICS.Trees
             return null;
         }
 
+        public int LeafSum()
+        {
+            return LeafSum(Root);
+        }
+
+        public int LeafSum(TNode node)
+        {
+            if (node == null) return 0;
+
+            if (node.Left == null && node.Right == null)
+            {
+                return node.Data;
+            }
+
+            return LeafSum(node.Left) + LeafSum(node.Right);
+        }
+
+
 
 
     }
