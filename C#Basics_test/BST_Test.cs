@@ -273,5 +273,25 @@ namespace C_Basics_test
             //Assert
             Assert.Equal(expectedSum, actualSum);
         }
+
+        [Fact]
+        public void Largest_Level_Value()
+        {
+            BinarySearchTree bst = new BinarySearchTree(5);
+            bst.Add(13);
+            bst.Add(7);
+            bst.Add(3);
+            bst.Add(7);
+            bst.Add(12);
+            bst.Add(20);
+            bst.Add(1);
+            bst.Add(4);
+            bst.Add(11);
+
+            List<int> expected = new List<int> { 5, 13, 20, 11 };
+            List<int> actual = bst.LargestLevelValue();
+
+            Assert.Equal(expected, actual);
+        }
     }
 }

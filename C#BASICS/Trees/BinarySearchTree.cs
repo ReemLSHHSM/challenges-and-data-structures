@@ -257,6 +257,41 @@ namespace C_BASICS.Trees
             return LeafSum(node.Left) + LeafSum(node.Right);
         }
 
+        public List<int> LargestLevelValue()
+        {
+            List<int> largestValues = new List<int>();
+            if (Root == null) return largestValues;
+
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                int maxLevelValue = int.MinValue;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    TNode node = queue.Dequeue();
+                    maxLevelValue = Math.Max(maxLevelValue, node.Data);
+
+                    if (node.Left != null)
+                    {
+                        queue.Enqueue(node.Left);
+                    }
+
+                    if (node.Right != null)
+                    {
+                        queue.Enqueue(node.Right);
+                    }
+                }
+
+                largestValues.Add(maxLevelValue);
+            }
+
+            return largestValues;
+        }
+
 
 
 
