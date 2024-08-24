@@ -128,7 +128,7 @@ Using your binary tree implementation, find the second maximum value in a binary
 ## CC16:Binary Tree - Largest Value at Each Level
 find the largest value at each level of the binary tree.
 
-[Binary Tree - Largest Value at Each Level](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Leaf-Sum/C%23BASICS/Trees/cc16.PNG "Visit Binary Tree - Largest Value at Each Level")   
+[Binary Tree - Largest Value at Each Level](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Largest-Level-Value/C%23BASICS/Trees/cc17%20(2).PNG "Visit Binary Tree - Largest Value at Each Level")   
 
 
 
