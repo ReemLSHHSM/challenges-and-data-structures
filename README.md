@@ -135,7 +135,7 @@ find the largest value at each level of the binary tree.
 Given a singly linked list and an integer k, rotate the linked list to the left by k places.
 After rotating, the node which was originally at position k will now become the head of the list, and the remaining nodes will follow.
 
-[Linked List - Rotate by K](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Largest-Level-Value/C%23BASICS/Trees/cc17%20(2).PNG "Visit Linked List - Rotate by K")   
+[Linked List - Rotate by K](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Linked-List-Rotate-K/C%23BASICS/RotateLinkedList/cc17.PNG "Visit Linked List - Rotate by K")   
 
 
 
