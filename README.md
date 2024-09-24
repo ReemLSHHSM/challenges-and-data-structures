@@ -128,8 +128,14 @@ Using your binary tree implementation, find the second maximum value in a binary
 ## CC16:Binary Tree - Largest Value at Each Level
 find the largest value at each level of the binary tree.
 
-[Binary Tree - Largest Value at Each Level](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Largest-Level-Value/C%23BASICS/Trees/cc17%20(2).PNG "Visit Binary Tree - Largest Value at Each Level")   
+[Binary Tree - Largest Value at Each Level](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Largest-Level-Value/C%23BASICS/Trees/cc17%20(2).PNG "Visit Binary Tree - Largest Value at Each Level")       
 
+
+## CC17:Linked List - Rotate by K
+Given a singly linked list and an integer k, rotate the linked list to the left by k places.
+After rotating, the node which was originally at position k will now become the head of the list, and the remaining nodes will follow.
+
+[Linked List - Rotate by K](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Largest-Level-Value/C%23BASICS/Trees/cc17%20(2).PNG "Visit Linked List - Rotate by K")   
 
 
 
