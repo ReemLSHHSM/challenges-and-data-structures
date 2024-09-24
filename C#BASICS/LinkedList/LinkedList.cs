@@ -190,6 +190,78 @@ namespace C_BASICS.LinkedList
         }
 
 
+        //Add Nodes At The End Of The List
+        public void Add_Node(int data)
+        {
+            Node node = new Node(data);
+            Node current = Head;
+
+            if (Head == null)
+            {
+                Head = node;
+            }
+
+            else
+            {
+
+
+                while (current.Next != null)
+                {
+
+                    current = current.Next;
+
+                }
+
+                current.Next = node;
+            }
+
+        }
+
+        //Remove Head
+        public void Remove_Head()
+        {
+            Node current= Head;
+
+            try
+            {
+
+
+                if (Head != null)
+                {
+                    Head = Head.Next;
+                }
+            }
+            catch (Exception ex) {
+
+                Console.WriteLine("Linked List Is Empty",ex.Message);
+            }
+
+        }
+
+        //Rotating the LinkedList To The Lift
+        public void RotateLeft(int k)
+        {
+            int holder;
+
+            try
+            {
+                if (Head != null)
+                {
+                   while(k>0)
+                    {
+                       holder = Head.Data;
+                        this.Remove_Head();
+                        this.Add_Node(holder);
+                        k--;
+                    }
+
+
+                }
+            }
+
+            catch(Exception ex) { Console.WriteLine(ex.Message); }
+           
+        }
 
     }
 }
