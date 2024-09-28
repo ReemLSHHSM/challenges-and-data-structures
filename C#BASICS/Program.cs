@@ -1,4 +1,8 @@
 ﻿
+using System.Xml.Linq;
+using C_BASICS.MinStack;
+using C_BASICS.Trees;
+using linkedlist = C_BASICS.LinkedList.LinkedList;//this is an alies
 
 namespace C_BASICS
 {
@@ -7,19 +11,34 @@ namespace C_BASICS
 
         static void Main(string[] args)
         {
-            Node node = new Node(1);
-            LinkedList list=new LinkedList(node);
 
-            Node node3 = new Node(3);
-            Node node2 = new Node(2);
-            list.addtoHead(node2);
-            list.addtoHead(node3);
-            Console.WriteLine("before");
-            list.Display();
-            Console.WriteLine("after");
-            list.Remove(3);
-            list.Display();
+            //BinarySearchTree tree = new BinarySearchTree(10);
 
+            //tree.Add(3);
+
+            //tree.Add(1);
+            //tree.Add(5);
+            //tree.Add(2);
+            //tree.Add(7);
+
+            //Console.WriteLine(tree.Contains(0));
+            //tree.Mirror();
+
+            Node node= new Node(1);
+
+            linkedlist list= new linkedlist(node);
+
+            list.Add_Node(2);
+            list.Add_Node(3);
+            list.Add_Node(4);
+            list.Add_Node(5);
+            list.Add_Node(6);
+            list.Add_Node(7);
+            list.PrintList();
+            Console.WriteLine("============");
+            Console.WriteLine();
+            list.RotateLeft(8);
+            list.PrintList();
         }
 
 

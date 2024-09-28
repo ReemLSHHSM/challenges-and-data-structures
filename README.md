@@ -1,5 +1,5 @@
 ### C# BASICS
-
+  
 ## Challenge 01
  CCA:ArrayReversal
 function named ArrayReversal that accepts an array as its parameter.It return a new array where the elements are in the reverse order.  
@@ -52,6 +52,7 @@ Write a function called ReverseWords that accepts a string as its parameter. The
 
 ## Linked List
 Completing different Linked List operations like add,remove,diplay  
+
 Add_Method:  
 [Add whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Add_Node.PNG "Visit Add")   
 Remove_Method   
@@ -59,7 +60,92 @@ Remove_Method
 Display_Method   
 [Display whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Display.PNG "Visit Display")   
 Includes   
-[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Includes.PNG "Visit Includes")   
+[Includes whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/LinkedList/Includes.PNG "Visit Includes")    
+
+## CC07:Linked List Remove Duplicates   
+Use your previous linked list implementation to include a new method for removing duplicate nodes from the LinkedList.   
+[Linked List Remove Duplicates whiteboard](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Linked%20List%20Remove%20Duplicates/cc7.PNG "Visit Linked List Remove Duplicates")     
+
+## CC08:MergeSorted-LinkedLists   
+A method for merging two sorted linked lists into a single sorted linked list.   
+[ MergeSorted-LinkedLists](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/MergeSorted-LinkedLists/cc08.PNG?raw=true "Visit  MergeSorted-LinkedLists")      
+
+## CC09:Stack
+Definition: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. You can only access the most recently added item. It supports operations:
+1. push: Add an item to the top.
+2. pop: Remove and return the top item.
+3. peek: Return the top item without removing it.
+4. isEmpty: Check if the stack is empty.
+   
+[Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/C%23BASICS/Stack%20%26%20Queue/cc08%20stack.PNG "Visit Stack")      
+
+## CC09:Queue
+Definition: A queue is a linear data structure that follows the First In, First Out (FIFO) principle. Elements are added at the back and removed from the front. It supports the following operations:
+1. Enqueue: Add an item to the back of the queue.
+2. Dequeue: Remove and return the item from the front of the queue.
+3. Peek: Return the item at the front without removing it.
+4. IsEmpty: Check if the queue is empty.
+   
+[Queue](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/C%23BASICS/Stack%20%26%20Queue/cc08queue.PNG "Visit Queue")    
+
+
+## CC10:Stack & Queue: Reverse a Stack using Queue
+Implement a method to reverse a stack using a queue in C#.
+   
+
+[ReverseStack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/ReverseStackUsingQueue/cc10.PNG "Visit ReverseStack")        
+
+## CC11:Delete Middle Element of a Stack
+Implement a method to delete the middle element of a stack in C#. If the stack has an even number of elements, remove the lower middle element.
+   
+[Delete Middle Element of a Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Delete-Middle-Element-Stack/C%23BASICS/DeleteMiddleElement/cc11.PNG?raw=true "Visit Delete Middle Element of a Stack")    
+
+## CC12:Min Stack
+Implement MinStack class in C# that uses these operations below and retrieves the minimum element in constant time complexity.   
+[Min Stack](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Min Stack")   
+
+## CC13:Binary Tree and Binary Search Tree Implementation
+Implement MinStack class in C# that uses these operations below and retrieves the minimum element in constant time complexity.   
+
+[White Board](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit White board")   
+[Real Code](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Min-Stack/C%23BASICS/MinStack/cc12.PNG?raw=true "Visit Real Code")    
+
+## CC14:Binary Tree - Mirror Tree
+To create a mirror image of a binary tree, where the left and right subtrees are swapped at each node.   
+
+[Binary Tree - Mirror Tree](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Mirror-Tree/C%23BASICS/Trees/cc14.PNG?raw=true "Visit Binary Tree - Mirror Tree")      
+
+## CC15:Binary Tree - Second Maximum Value
+Using your binary tree implementation, find the second maximum value in a binary tree.
+
+[Binary Tree - Second Maximum Value](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/master/C%23BASICS/Trees/cc15.PNG?raw=true "Visit Binary Tree - Second Maximum Value")     
+
+## CC16:Binary Tree - Sum of leaf nodes
+Using your binary tree implementation, find the second maximum value in a binary tree.
+
+[Binary Tree - Sum of leaf nodes](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Leaf-Sum/C%23BASICS/Trees/cc16.PNG "Visit Binary Tree - Sum of leaf nodes")    
+
+## CC16:Binary Tree - Largest Value at Each Level
+find the largest value at each level of the binary tree.
+
+[Binary Tree - Largest Value at Each Level](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Largest-Level-Value/C%23BASICS/Trees/cc17%20(2).PNG "Visit Binary Tree - Largest Value at Each Level")       
+
+
+## CC17:Linked List - Rotate by K
+Given a singly linked list and an integer k, rotate the linked list to the left by k places.
+After rotating, the node which was originally at position k will now become the head of the list, and the remaining nodes will follow.
+
+[Linked List - Rotate by K](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Linked-List-Rotate-K/C%23BASICS/RotateLinkedList/cc17.PNG "Visit Linked List - Rotate by K")   
+
+
+
+
+
+
+
+
+
+
 
 
 
