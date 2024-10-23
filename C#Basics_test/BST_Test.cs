@@ -338,5 +338,43 @@ namespace C_Basics_test
             //Assert
             Assert.Equal("10 20 30 40", output);
         }
+
+        [Fact]
+        public void MaxNodesLevel()
+        {
+            //Arrange
+            BinarySearchTree tree = new BinarySearchTree(1);
+            tree.Root.Left = new TNode(2);
+            tree.Root.Right = new TNode(3);
+            tree.Root.Left.Left = new TNode(4);
+            tree.Root.Left.Right = new TNode(5);
+            tree.Root.Right.Right = new TNode(6);
+            tree.Root.Left.Left.Left = new TNode(7);
+
+            //Act
+            int level=tree.FindMaxNodesLevel();
+            
+            //Assert
+            Assert.Equal(2, level);
+        }
+
+        [Fact]
+        public void MaxNodesLevelSame()
+        {
+            //Arrange
+            BinarySearchTree tree = new BinarySearchTree(1);
+            tree.Root.Left = new TNode(2);
+            tree.Root.Right = new TNode(3);
+            tree.Root.Left.Left = new TNode(4);
+            tree.Root.Right.Right = new TNode(5);
+   
+            //Act
+            int level = tree.FindMaxNodesLevel();
+
+            //Assert
+            Assert.Equal(1, level);
+        }
+
+
     }
 }
