@@ -3,6 +3,7 @@ using C_BASICS.Trees;
 using System;
 using System.Collections.Generic;
 using Xunit;
+using Xunit.Sdk;
 
 namespace C_Basics_test
 {
@@ -292,6 +293,50 @@ namespace C_Basics_test
             List<int> actual = bst.LargestLevelValue();
 
             Assert.Equal(expected, actual);
+        }
+
+        private string CaptureConsoleOutput(Action action)
+        {
+            using (var consoleOutput = new StringWriter()) // 1. Create a StringWriter to capture the output of the console
+            {
+                Console.SetOut(consoleOutput); // 2. Redirect Console output to the StringWriter
+                action(); // 3. Execute the action (in this case, calling tree.PrintRightView())=>the action is a delegate
+                return consoleOutput.ToString().Trim(); // 4. Return the captured output as a string 
+            }
+        }
+
+
+        [Fact]
+        public void PrintRightView()
+        {
+            //Arrange 
+            BinarySearchTree tree = new BinarySearchTree(2);
+            tree.Root.Left = new TNode(3);
+            tree.Root.Right = new TNode(5);
+            tree.Root.Left.Left = new TNode(4);
+            tree.Root.Right.Right = new TNode(6);
+            tree.Root.Left.Left.Right = new TNode(7);
+
+            //Act 
+            string output = CaptureConsoleOutput(() => tree.PrintRightView());
+
+            // Assert
+            Assert.Equal("2 5 6 7", output);
+
+        }
+
+        [Fact]
+        public void RightSkewedTree()
+        {
+            //Arrange
+            BinarySearchTree tree = new BinarySearchTree(10);
+            tree.Root.Right = new TNode(20);
+            tree.Root.Right.Right = new TNode(30);
+            tree.Root.Right.Right.Right = new TNode(40);
+            //Act
+            string output= CaptureConsoleOutput(() => tree.PrintRightView());
+            //Assert
+            Assert.Equal("10 20 30 40", output);
         }
     }
 }
