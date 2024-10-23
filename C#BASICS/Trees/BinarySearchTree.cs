@@ -292,11 +292,43 @@ namespace C_BASICS.Trees
             return largestValues;
         }
 
+        public void PrintRightView()
+        {
+            if (Root == null) return;
 
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
 
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
 
+                for (int i = 0; i < levelSize; i++)
+                {
+                    TNode currentNode = queue.Dequeue();
+
+                    if (i == levelSize - 1)
+                    {
+                        Console.Write(currentNode.Data + " ");
+                    }
+
+                    if (currentNode.Left != null)
+                    {
+                        queue.Enqueue(currentNode.Left);
+                    }
+                    if (currentNode.Right != null)
+                    {
+                        queue.Enqueue(currentNode.Right);
+                    }
+                }
+            }
+        }
     }
+
+
+
 }
+
           
      
 
