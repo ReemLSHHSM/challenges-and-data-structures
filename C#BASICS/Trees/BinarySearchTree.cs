@@ -323,6 +323,41 @@ namespace C_BASICS.Trees
                 }
             }
         }
+
+
+        public int FindMaxNodesLevel()
+        {
+            if (Root == null) return -1;
+
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+            int maxNodes = 0;
+            int levelWithMaxNodes = 0;
+            int currentLevel = 0;
+
+            while (queue.Count > 0)
+            {
+                int nodeCount = queue.Count;
+                if (nodeCount > maxNodes)
+                {
+                    maxNodes = nodeCount; 
+                    levelWithMaxNodes = currentLevel;
+                }
+
+                for (int i = 0; i < nodeCount; i++)
+                {
+                    TNode node = queue.Dequeue();
+                    if (node.Left != null) queue.Enqueue(node.Left);
+                    if (node.Right != null) queue.Enqueue(node.Right);
+                }
+
+                currentLevel++; 
+            }
+
+            return levelWithMaxNodes; 
+        }
+
+       
     }
 
 
