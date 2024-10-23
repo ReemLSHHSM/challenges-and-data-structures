@@ -145,7 +145,12 @@ the rightmost node at each level, when viewed from the right side.
 
 ## CC19:LevelWithMaxNodes
 Given a binary tree, write a function to find the level that contains the maximum number of nodes. 
-If multiple levels have the same number of maximum nodes, return the first such level
+If multiple levels have the same number of maximum nodes, return the first such level   
+
+## CC20:MinDepth
+Given a binary tree, write a function to calculate the minimum depth of the tree. The minimum depth is defined as the
+number of nodes along the shortest path from the root node down to the nearest leaf node.
+
 
 
 

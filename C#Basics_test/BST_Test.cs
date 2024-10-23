@@ -2,6 +2,7 @@
 using C_BASICS.Trees;
 using System;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using Xunit;
 using Xunit.Sdk;
 
@@ -375,6 +376,36 @@ namespace C_Basics_test
             Assert.Equal(1, level);
         }
 
+        [Fact]
+        public void MinDepth()
+        {
+            //Arrange
+            BinarySearchTree tree = new BinarySearchTree(1);
+            tree.Root.Left = new TNode(2);
+            tree.Root.Right = new TNode(3);
+            tree.Root.Left.Left = new TNode(4);
+            tree.Root.Right.Right = new TNode(5);
+
+            //Act
+            int min = tree.MinDepth(tree.Root);
+
+            //Assert
+            Assert.Equal(3,min);
+        }
+
+        [Fact]
+        public void MinDepthEmpty()
+        {
+            //Arrange
+            BinarySearchTree tree = new BinarySearchTree(1);
+            tree.Root = null;
+
+            //Act
+            int min = tree.MinDepth(tree.Root);
+
+            //Assert
+            Assert.Equal(0, min);
+        }
 
     }
 }
