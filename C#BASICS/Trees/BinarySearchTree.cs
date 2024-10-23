@@ -357,7 +357,18 @@ namespace C_BASICS.Trees
             return levelWithMaxNodes; 
         }
 
-       
+        public int MinDepth(TNode node)
+        {
+            if (node == null) return 0;
+
+            if (node.Left == null) return MinDepth(node.Right) + 1;
+
+            if (node.Right == null) return MinDepth(node.Left) + 1;
+
+
+            return Math.Min(MinDepth(node.Left), MinDepth(node.Right)) + 1;
+        }
+
     }
 
 
