@@ -142,7 +142,7 @@ After rotating, the node which was originally at position k will now become the 
 Given a binary tree, implement a method PrintRightView() that prints the right
 view of the tree. The right view of a binary tree includes 
 the rightmost node at each level, when viewed from the right side.   
-[PrintRightView](https://github.com/ReemLSHHSM/challenges-and-data-structures/blob/Linked-List-Rotate-K/C%23BASICS/RotateLinkedList/cc17.PNG "PrintRightView")   
+
 
 
 
