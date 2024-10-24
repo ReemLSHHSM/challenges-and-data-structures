@@ -3,6 +3,7 @@ using C_BASICS.Trees;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
+using System.Text.RegularExpressions;
 using Xunit;
 using Xunit.Sdk;
 
@@ -302,7 +303,9 @@ namespace C_Basics_test
             {
                 Console.SetOut(consoleOutput); // 2. Redirect Console output to the StringWriter
                 action(); // 3. Execute the action (in this case, calling tree.PrintRightView())=>the action is a delegate
-                return consoleOutput.ToString().Trim(); // 4. Return the captured output as a string 
+                string output= consoleOutput.ToString();
+                string cleanedOutput = Regex.Replace(output, @"[^\d]", " ");
+                return cleanedOutput.Trim(); // 4. Return the captured output as a string 
             }
         }
 
@@ -407,5 +410,49 @@ namespace C_Basics_test
             Assert.Equal(0, min);
         }
 
+        [Fact]
+        public void BTToBST()
+        {
+            //Arrange
+            Binary_Tree Btree = new Binary_Tree(40);
+            Btree.Root.Left = new TNode(10);
+            Btree.Root.Right = new TNode(50);
+            Btree.Root.Left.Left = new TNode(5);
+            Btree.Root.Left.Right = new TNode(30);
+            Btree.Root.Right.Right = new TNode(60);
+            Btree.Root.Left.Right.Left = new TNode(20);
+            Btree.Root.Left.Right.Right = new TNode(35);
+
+            //ACT
+            TNode node=Btree.ConvertToBST();
+            string output= CaptureConsoleOutput(()=>Btree.InOrder(node));
+
+            //Assert
+            Assert.Equal(output, "5  10  20  30  35  40  50  60");
+        
+        }
+
+        [Fact]
+        public void BTToBSTSkewed()
+        {
+            //Arrange
+            Binary_Tree Btree = new Binary_Tree(40);
+            Btree.Root.Left = new TNode(10);
+            Btree.Root.Left.Left = new TNode(5);
+            Btree.Root.Left.Left = new TNode(20);
+
+            //ACT
+            TNode node = Btree.ConvertToBST();
+            string output = CaptureConsoleOutput(() => Btree.InOrder(node));
+
+            //Assert
+            Assert.Equal("10  20  40", output);
+
+        }
+
     }
 }
+
+//Action is a built -in delegate type in C# that does not return a value and can take from 0 to 16 parameters.
+//In this case, Action represents a method that is passed into CaptureConsoleOutput and can be executed
+//    inside the method

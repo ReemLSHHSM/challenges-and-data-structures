@@ -11,7 +11,7 @@ namespace C_BASICS.Trees
     {
         public TNode Root;
 
-        public BinarySearchTree(int data)
+        public BinarySearchTree(int data):base(data)
         {
             Root = new TNode(data);
         }
@@ -369,11 +369,15 @@ namespace C_BASICS.Trees
             return Math.Min(MinDepth(node.Left), MinDepth(node.Right)) + 1;
         }
 
+       
+
+        }
+
     }
 
 
 
-}
+
 
           
      
